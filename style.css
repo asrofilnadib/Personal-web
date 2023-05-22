@@ -1,0 +1,262 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40%;
+  color: #11999e;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #11999e;
+  font-size: 1rem;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 50px;
+  background-color: rgba(254, 254, 254, 0.6);
+  transition: 0.2s;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-bar ul li a:hover {
+  color: #fefefe;
+  background-color: #11999e;
+}
+
+.nav-bar ul li a.active {
+  color: #fefefe;
+  background-color: #11999e;
+}
+
+@media only screen and (max-width: 850px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: #fefefe;
+    margin: 6px 0;
+  }
+
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    transition: 0.2s;
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80% auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .nav-bar ul li a {
+    margin-bottom: 10px;
+    color: rebeccapurple;
+  }
+}
+
+h1 {
+  /* 1em = 16px = 100% */
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 5.625rem;
+  font-family: "Sacramento", cursive;
+  line-height: 2;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+}
+
+.profile p {
+  line-height: 2;
+  width: 30%;
+  margin: 5px auto 0;
+  font-weight: bold;
+}
+
+hr {
+  border-style: dotted none none none;
+  border-width: 10px;
+  width: 65px;
+  margin: 20px auto;
+  border-color: #EAF6F6;
+}
+
+div.top-container {
+  background-color: #c9e6f2;
+  position: relative;
+  padding-top: 140px;
+}
+
+h2.description {
+  font-weight: normal;
+}
+
+.name,
+.description {
+  color: #66bfbf;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin: 20px 0 10px 0;
+}
+
+h2.skills {
+  margin-bottom: 35px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.btm-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.skill-row h3 {
+  font-size: 1.3rem;
+}
+
+.skill-row h3,
+.skill-row p {
+  text-align: left;
+}
+
+.skill-row p {
+  line-height: 2rem;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px;
+}
+
+.excel {
+  width: 25%;
+  float: left;
+  margin: 0 30px 0 0;
+}
+
+.development {
+  width: 25%;
+  float: right;
+  margin: 0 0 0 30px;
+}
+
+.contact-me h4 {
+  color: #66bfbf;
+}
+
+.contact-me p {
+  margin: 16px auto 52px;
+}
+
+.btn {
+  background: #7df5f5;
+  background-image: -webkit-linear-gradient(top, #7df5f5, #4a8787);
+  background-image: -moz-linear-gradient(top, #7df5f5, #4a8787);
+  background-image: -ms-linear-gradient(top, #7df5f5, #4a8787);
+  background-image: -o-linear-gradient(top, #7df5f5, #4a8787);
+  background-image: linear-gradient(to bottom, #7df5f5, #4a8787);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 0px 3px 6px #666666;
+  -moz-box-shadow: 0px 3px 6px #666666;
+  box-shadow: 0px 3px 6px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #66bff7;
+  background-image: -webkit-linear-gradient(top, #66bff7, #4883a6);
+  background-image: -moz-linear-gradient(top, #66bff7, #4883a6);
+  background-image: -ms-linear-gradient(top, #66bff7, #4883a6);
+  background-image: -o-linear-gradient(top, #66bff7, #4883a6);
+  background-image: linear-gradient(to bottom, #66bff7, #4883a6);
+  text-decoration: none;
+}
+
+.bottom-container {
+  margin: 0;
+  margin-top: 50px;
+  padding: 40px 60px 10px;
+  align-items: center;
+  background-color: #66BFBF;
+}
+
+.bottom-container a {
+  font-weight: normal;
+  font-family: Montserrat, sans-serif;
+  text-decoration: none;
+  margin: 15px 10px 15px;
+  color: #129fa4dd;
+}
+
+.bottom-container p {
+  margin-top: 40px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #EAF6F6;
+}
